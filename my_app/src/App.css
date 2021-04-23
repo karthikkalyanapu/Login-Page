@@ -1,51 +1,67 @@
 * {
-  margin:0;
+  margin: 0;
   padding: 0;
-
 }
 
-body{
+body {
   background-color: rgb(137, 114, 114);
-  margin:0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.parent{
+.parent {
   width: 100vw;
   height: 90vh;
   display: flex;
-    place-items: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  place-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.child{
-  width:30%;
-  height:50%;
-  background-color:#1f1f2e;
+.child {
+  width: 25%;
+  height: 50%;
+  background-color: #1f1f2e;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   border-radius: 20px;
-  
+  padding:150px;
 }
 
-.dropdown-basic{
+.dropdown-basic {
   color: white;
   margin: 20px;
-    background-color: #31322f;
-    font-weight: 700;
-   
+  background-color: #31322f;
+  font-weight: 700;
 }
 
-.home{
-  padding:20px;
+.home {
+  padding: 20px;
   color: white;
   font-family: auto;
   font-weight: 500;
   font-size: 20px;
 }
-.dropbox{
-  width:12.5%;
+.dropbox {
+  width: 12.5%;
+}
+
+@media screen and (max-width: 700px) {
+  .child {
+    width: 50%;
+    padding:140px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .child {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .child {
+    width: 40%;
+  }
 }

@@ -5,10 +5,10 @@ import Users from './Users'
 
 
 const Changepassword = () => {
-  const [email, setEmail] = useState("Karthik Kalyanapu");
+  const [email] = useState("Karthik Kalyanapu");
   const [newPassword, setNewPassword] = useState(" ");
   
-  const [allEntry, setNewEntry] = useState([]);
+ // const [allEntry, setNewEntry] = useState([]);
 
   const submitForm=(e) =>{
     e.preventDefault();
@@ -42,8 +42,10 @@ const Changepassword = () => {
           </div>
           <div style={{textAlign: 'center',marginRight:'70px'}}>
           <button type="submit" style={{margin:'10px',padding:'3px',fontWeight:'600'}}>Save Password</button>
-
-         <button type="submit" style={{margin:'10px',padding:'3px',fontWeight:'600',width:'10%'}}>Logout</button></div>
+          <Link to="/form">
+         <button type="submit" style={{margin:'10px',padding:'3px',fontWeight:'600',width:'20%'}}>Logout</button>
+         </Link>
+         </div>
           
         </form>
       </div>
